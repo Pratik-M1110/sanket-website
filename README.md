@@ -22,6 +22,21 @@ npm run build        # writes the static site to dist/
 npm run preview      # serves dist/ locally
 ```
 
+## Cheapest deployment: Cloudflare Pages free plan
+
+For a small static advocate website, Cloudflare Pages' free plan can host the site without a monthly hosting bill. A custom domain is optional and costs extra; using a free `*.pages.dev` address avoids that domain cost.
+
+1. Sign in to Cloudflare and open **Workers & Pages** → **Create application** → **Pages** → **Connect to Git**.
+2. Connect GitHub and select `Pratik-M1110/sanket-website`.
+3. Choose `develop` as the **Production branch**.
+4. Set the build command to `npm run build` and the build output directory to `dist`.
+5. In **Settings** → **Environment variables**, set `SITE_URL` to the exact public site origin, e.g. `https://sanket-website.pages.dev` (no trailing slash). Set `NODE_VERSION` to `22`.
+6. Deploy. Every later push to `develop` will trigger a new deployment.
+
+If the chosen `*.pages.dev` project name is unavailable, use the hostname Cloudflare assigns. Make sure `SITE_URL` matches that hostname exactly, then redeploy. The build uses it for page canonicals, alternate-language links, structured data, `sitemap.xml`, and `robots.txt`.
+
+After the site is live, open the homepage, `/en/`, and a service page on both languages. Submit `https://<site-host>/sitemap.xml` to Google Search Console. A custom `.in` or `.com` domain can be connected later; domain registration is a separate recurring cost.
+
 ## Where to edit things
 
 | What | File |
