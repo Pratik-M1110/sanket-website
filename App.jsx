@@ -184,7 +184,7 @@ function ContactSection() {
                 <span className="icon">💬</span>
                 <div>
                   <label>WhatsApp</label>
-                  <a href="https://wa.me/918888187545">Message Now</a>
+                  <a href="https://wa.me/918888187545">Message Now.</a>
                 </div>
               </div>
               <div className="info-item">
