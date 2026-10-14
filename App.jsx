@@ -198,7 +198,7 @@ function ContactSection() {
           </div>
           <div className="contact-action">
              <div className="emergency-box">
-               <h3>Emergency?</h3>
+               <h3>Emergency</h3>
                <p>For urgent matters like police custody, anticipatory bail, or court injunctions, call the emergency number immediately.</p>
                <a href={`tel:${publicPhone.replace(/[^+\d]/g, '')}`} className="cta-button">Call Now</a>
              </div>
