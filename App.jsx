@@ -209,7 +209,7 @@ function ContactSection() {
   );
 }
 
-const firmPhone = '+91 88881 87545';
+const firmPhone = '+91 88881 8754';
 const firmPhoneHref = 'tel:+918888187545';
 const firmWhatsAppBase = 'https://wa.me/918888187545';
 const firmWhatsApp = `${firmWhatsAppBase}?text=${encodeURIComponent('नमस्कार, मला कायदेविषयक सल्ल्यासाठी संपर्क करायचा आहे.')}`;
