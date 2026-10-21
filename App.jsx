@@ -235,7 +235,7 @@ function leadSource() {
   const campaign = params.get('utm_source');
   if (campaign) return [campaign, params.get('utm_medium'), params.get('utm_campaign')].filter(Boolean).join(' / ');
   try {
-    return document.referrer ? new URL(document.referrer).hostname : 'direct';
+    return document.referrer ? new URL(document.referrer).hostname : 'direc';
   } catch {
     return 'direct';
   }
